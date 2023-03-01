@@ -1,16 +1,11 @@
 import React,{useState} from 'react';
-import {Image,FlatList, StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
+import {Image,FlatList, StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function App() {
   const [text, onChangeText] = useState('');
   return (
       <View style={styles.container}>
         <Text style={styles.Label}>Living Things: Animals and Category They Belong</Text>
-        <TextInput
-        style={styles.input}
-        placeholder="Search animal here..."
-        value={text}
-        />
         <FlatList
           data = {[
             {animalName: 'Chimpanzee', category: 'Mammal', description: 'Chimpanzees are great apes found across central and West Africa. Along with bonobos, they are our closest living relatives, sharing 98.7 percent of our genetic blueprint. Humans and chimps are also thought to share a common ancestor who lived some seven to 13 million years ago.', imageURL: 'https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcT3-fOEmE-Osuv4kf5tb4voUm6tMtTSNpVKyYkR33dpCDM8iTwTIfGj6cXNN8MdJw3Apn9yd2U5x6fv1Yw'},
@@ -59,7 +54,8 @@ const styles = StyleSheet.create({
 textDescription: {
   fontSize: 15,
   textAlign: 'justify',
-  color: 'white'
+  color: 'white',
+  paddingBottom: 8
 },
 Label: {
   fontSize: 35,
