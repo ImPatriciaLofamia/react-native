@@ -65,12 +65,4 @@ Label: {
   fontWeight: 700,
   color: 'white'
 },
-input: {
-  height: 40,
-  margin: 10,
-  borderWidth: 1,
-  padding: 10,
-  backgroundColor: 'white'
-}
-
 });
